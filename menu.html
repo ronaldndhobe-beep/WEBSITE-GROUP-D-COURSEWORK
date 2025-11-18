@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="Style/style.css" />
+    <link rel="stylesheet" href="Style/menu.css" />
+    <link rel="stylesheet" href="Style/animation.css" />
+    <title>Document</title>
+  </head>
+  <body class="pt-14">
+    <header>
+      <nav
+        class="text-white bg-black flex justify-around items-center p-2 fixed top-0 w-full h-14"
+      >
+        <div class="flex uppercase gap-2 items-center">
+          <div class="text-2xl font-bold">LAPRAREL RESTAURANT</div>
+          <ul class="flex list-none gap-2 items-center">
+            <li><a href="index.html" class="decoration-none">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="blog.html.html">Blog</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+          </ul>
+        </div>
+        <div>
+          <input
+            type="search"
+            placeholder="search Menu items"
+            class="border p-2 bg-white text-black rounded-lg"
+          />
+          <button
+            class="border-[#ffc107] text-[#ffc107] border p-2 rounded-lg hover:bg-[#ffc107] hover:text-black transition-all duration-300"
+          >
+            search
+          </button>
+          <button class="bg-[#ffc107] p-2 rounded-lg text-black">
+            Book A table
+          </button>
+        </div>
+      </nav>
+    </header>
+    <hr />
+    <main class="min-h-screen pt-5 mx-auto pb-10 max-w-7xl">
+      <h1 class="text-3xl font-bold text-center m-4">Explore Our Fresh Menu</h1>
+      <section id="product-preview" class="grid grid-cols-4 gap-8"></section>
+    </main>
+    <script src="script/DB.js"></script>
+  </body>
+</html>
